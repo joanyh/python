@@ -1,3 +1,5 @@
+import math
+
 def is_prime(num):
     """
     This is a function that takes as its input an integer.
@@ -10,7 +12,8 @@ def is_prime(num):
         return True
 
     # Quick test for even numbers
-    for a in range (2, num):
+    # We only need to check up to the square root of n
+    for a in range (2, math.sqrt(num)):
         if num % a == 0:
             return False
          
@@ -26,4 +29,3 @@ assert is_prime(10) == False
 assert is_prime(15) == False
 assert is_prime(150000003) == False
 
- 
