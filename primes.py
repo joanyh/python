@@ -22,8 +22,9 @@ def is_prime(num):
     # this algorithm just divides by everything
     for i in range(1, int(math.sqrt(num))):
         if num % i == 0:
-            return True
-        return False
+            return False 
+    
+    return True
 
  
 # Example numbers to test:
