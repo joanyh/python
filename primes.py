@@ -19,7 +19,11 @@ def is_prime(num):
          
     # Implement an algorithm below to test for primes,
     # e.g. Sieve of Eratosthenes
-
+    # this algorithm just divides by everything
+    for i in range(1, int(math.sqrt(num))):
+        if num % i == 0:
+            return True
+        return False
 
  
 # Example numbers to test:
