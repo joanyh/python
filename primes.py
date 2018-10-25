@@ -23,8 +23,23 @@ def is_prime(num):
     for i in range(1, int(math.sqrt(num))):
         if num % i == 0:
             return False 
-    
     return True
+    
+    # the code I submitted
+    
+    def is_prime(num):
+    # quick test to test small numbers
+    if num <= 3:
+        return (True)
+    elif num % 2 == 0:
+            return (False)
+    sqr = int(math.sqrt(num)) + 1
+    for a in range(3, sqr, 2):
+        if num % a == 0:
+            return False
+    return True
+
+    
 
  
 # Example numbers to test:
